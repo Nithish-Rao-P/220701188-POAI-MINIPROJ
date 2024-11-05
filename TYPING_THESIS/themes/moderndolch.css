@@ -1,0 +1,109 @@
+/*
+Colors inspired by GMK Modern Dolch by Janglad
+https://clavier.xyz/moderndolch
+dark gray: 494b4f
+light gray: 7c7e81
+Red: bc5868
+Cyan: 81d8d0
+*/
+
+body {
+  background: #494b4f;
+}
+
+#header {
+  color: #fafafa;
+}
+
+#left-wing {
+  color: #fafafa;
+}
+
+#right-wing {
+  color: #fafafa;
+}
+
+#typing-area, #theme-area {
+  background: #7c7e81;
+}
+
+#text-display {
+  color: #fafafa;
+}
+
+#input-field {
+  background: #494b4f;
+  color: #fafafa;
+}
+
+#input-field.wrong {
+  background: rgba(198, 38, 46, 0.3);
+}
+
+#redo-button {
+  background: #81d8d0;
+  color: #fafafa;
+}
+
+#footer {
+  color: #fafafa;
+}
+
+.highlight {
+  color: #81d8d0;
+}
+
+.correct {
+  color: #bbbcbe;
+}
+
+.wrong {
+  color: #bc5868;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4f181e;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

@@ -1,0 +1,112 @@
+/*
+Colors inspired by GMK Dots by biip
+https://novelkeys.xyz/products/gmk-dots-gb
+dark blue:  #191b25
+red:        #fe494e
+purple:     #9b57ff
+blue:       #36c1f6
+green:      #32cb8b
+yellow:     #ffd751
+orange:     #ff9552
+*/
+
+body {
+  background: #191b25;
+}
+
+#header {
+  color: #fafafa;
+}
+
+#left-wing {
+  color: #ff9552;
+}
+
+#right-wing {
+  color: #ffd751;
+}
+
+#typing-area, #theme-area {
+  background: #232533;
+}
+
+#text-display {
+  color: #fafafa;
+}
+
+#input-field {
+  background: #2c2e40;
+  color: #fafafa;
+}
+
+#input-field.wrong {
+  background: rgba(254, 73, 78, 0.3);
+}
+
+#redo-button {
+  background: #32cb8b;
+  color: #fafafa;
+}
+
+#footer {
+  color: #36c1f6;
+}
+
+.highlight {
+  color: #9b57ff;
+}
+
+.correct {
+  color: #32cb8b;
+}
+
+.wrong {
+  color: #fe494e;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #2c2e40;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

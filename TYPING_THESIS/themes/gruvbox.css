@@ -1,0 +1,104 @@
+/*
+Adapted from the Gruvbox theme
+*/
+
+body {
+  background: #282828;
+}
+
+#header {
+  color: #d79921;
+}
+
+.bar {
+  color: #d79921;
+}
+
+#right-wing text {
+  color: #ebdbb2;
+}
+
+#typing-area, #theme-area {
+  background: #1d2021;
+}
+
+#text-display {
+  color: #ebdbb2;
+}
+
+#input-field {
+  background: #3c3836;
+  color: #ebdbb2;
+}
+
+#input-field.wrong {
+  background: rgba(204,36,29, 0.3);
+}
+
+#redo-button {
+  background: #689d6a;
+  color: #ebdbb2;
+}
+
+#footer {
+  color: #d79921;
+}
+
+.highlight {
+  color: #83a598;
+}
+
+.correct {
+  color: #98971a;
+}
+
+.wrong {
+  color: #cc241d;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3c3836;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

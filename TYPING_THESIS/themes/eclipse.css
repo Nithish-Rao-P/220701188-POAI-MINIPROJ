@@ -1,0 +1,108 @@
+/*
+Inspired by GMK Eclipse by T0mb3ry
+https://drop.com/buy/massdrop-x-t0mb3ry-gmk-eclipse-custom-keycap-set
+dark blue: #314f6f
+dark grey: #3a3a3a
+light blue: #abc6dc
+*/
+
+body {
+  background: #314f6f;
+}
+
+#header {
+  color: #abc6dc;
+}
+
+#left-wing {
+  color: #abc6dc;
+}
+
+#right-wing {
+  color: #abc6dc;
+}
+
+#typing-area, #theme-area {
+  background: #3a3a3a;
+}
+
+#text-display {
+  color: #abc6dc;
+}
+
+#input-field {
+  background: #333333;
+  color: #abc6dc;
+}
+
+#input-field.wrong {
+  background: rgba(198, 38, 46, 0.3);
+}
+
+#redo-button {
+  background: #abc6dc;
+  color: #3a3a3a;
+}
+
+#footer {
+  color: #abc6dc;
+}
+
+.highlight {
+  color: #a56de2;
+}
+
+.correct {
+  color: #68b723;
+}
+
+.wrong {
+  color: #c6262e;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

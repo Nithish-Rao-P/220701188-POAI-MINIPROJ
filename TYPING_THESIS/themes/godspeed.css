@@ -1,0 +1,102 @@
+body {
+  background: #6A97B5;
+}
+
+#header {
+  color: #e5e8e6;
+}
+
+#left-wing {
+  color: #e5e8e6;
+}
+
+#right-wing {
+  color: #e5e8e6;
+}
+
+#typing-area,
+#theme-area {
+  background: #eae3d5;
+}
+
+#text-display {
+  color: #575d5e;
+}
+
+#input-field {
+  background: #5A5E61;
+  color: #eae3d5;
+}
+
+#input-field.wrong {
+  background: #A90C1F;
+  color: #e5e8e6;
+}
+
+#redo-button {
+  background: #faee69;
+  color: #32321d;
+}
+
+#footer {
+  color: #e5e8e6;
+}
+
+.highlight {
+  color: #6A97B5;
+}
+
+.correct {
+  color: #99a4a6;
+}
+
+.wrong {
+  color: #A90C1F;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #5A5E61;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

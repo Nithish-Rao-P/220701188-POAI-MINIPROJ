@@ -1,0 +1,110 @@
+/*
+Colors inspired by GMK 9009 by Dixie Mech
+https://dixiemech.com/gmk9009
+legend color: #2e2f33
+off white: #d9d2c8
+beige accent: #b6b09a
+red: #d28782
+green: #6f8c70
+*/
+
+body {
+  background: #b6b09a;
+}
+
+#header {
+  color: #2e2f33;
+}
+
+#left-wing {
+  color: #2e2f33;
+}
+
+#right-wing {
+  color: #2e2f33;
+}
+
+#typing-area, #theme-area {
+  background: #d9d2c8;
+}
+
+#text-display {
+  color: #2e2f33;
+}
+
+#input-field {
+  background: #b6b09a;
+  color: #2e2f33;
+}
+
+#input-field.wrong {
+  background: rgba(210, 135, 130, 0.3);
+}
+
+#redo-button {
+  background: #6f8c70;
+  color: #d9d2c8;
+}
+
+#footer {
+  color: #2e2f33;
+}
+
+.highlight {
+  color: #96907a;
+}
+
+.correct {
+  color: #6f8c70;
+}
+
+.wrong {
+  color: #d28782;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #96907a;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

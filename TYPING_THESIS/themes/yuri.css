@@ -1,0 +1,108 @@
+/*
+Inspired by GMK Yuri by T0mb3ry
+https://drop.com/buy/massdrop-x-t0mb3ry-gmk-yuri-custom-keycap-set
+orange: #ea4221
+navy: #293649
+light blue: #abc6dc
+*/
+
+body {
+  background: #293649;
+}
+
+#header {
+  color: #ea4221;
+}
+
+#left-wing {
+  color: #ea4221;
+}
+
+#right-wing {
+  color: #ea4221;
+}
+
+#typing-area, #theme-area {
+  background: #abc6dc;
+}
+
+#text-display {
+  color: #293649;
+}
+
+#input-field {
+  background: #97afc2;
+  color: #293649;
+}
+
+#input-field.wrong {
+  background: rgba(198, 38, 46, 0.3);
+}
+
+#redo-button {
+  background: #ea4221;
+  color: #293649;
+}
+
+#footer {
+  color: #ea4221;
+}
+
+.highlight {
+  color: #a56de2;
+}
+
+.correct {
+  color: #6a7e93;
+}
+
+.wrong {
+  color: #c6262e;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #4f181e;
+  width: auto;
+  max-width: 400px; /* Set the max width you want */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+  transition: all 0.5s;
+  margin: 0 auto; /* Centers the container horizontally */
+  z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+  width: 100%; /* Stays consistent when hovered */
+  transition: all 0.5s;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}

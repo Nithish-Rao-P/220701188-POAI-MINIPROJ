@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family:'ubuntu';
+}
+
+
+/* CARDS */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust space between cards */
+    gap: 4%; /* Gap between cards */
+    margin: 15px 0; /* Optional: Add margin for the container */
+}
+
+.card {
+    padding: 50px;
+    border-radius: 15px;
+    background-color: white;
+    width: 50vh; /* Calculate width for three cards per row */
+    min-height: 30px;
+    color: grey;
+    margin-bottom: 15px; /* Space below each card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex; /* Add flexbox to card for inner content */
+    align-items: center; /* Center content vertically */
+}
+
+.card div {
+    width: 60%; /* Adjusted width for the inner content */
+    height: auto; /* Set to auto to prevent overflow */
+    margin-left: 15px; /* Optional: Add margin to separate icon from text */
+}
+
+.card i {
+    background: #b3f0ff;
+    color: #00a3cc;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    display: flex; /* Changed to flex for centering */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+}
+
+.card span {
+    color: black;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+/* CARDS */
+
+.circleChart {
+    flex-basis:48%;
+}
+.chartContainer > div {    
+    background-color: white;
+    border-radius: 5%;
+    padding:15px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.barChart {
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+}
+.chartContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height:400px;
+    width: 100%;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+.tabcontent:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabcontent:last-child .chartContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.tabcontent:last-child .chartContainer .lineChart{
+    margin:15px 0;
+    flex-basis: 80%;
+    align-self: stretch;
+    padding:15px;
+}
+
+@media (max-width: 1000px) {
+    .chartContainer{
+        align-items:stretch;
+    }
+    .chartContainer > div {
+        flex-basis: 100%;
+        margin-bottom: 25px;
+    }
+    body > .container aside:nth-child(1) nav ul span{
+        display: none;
+    }
+    body > .container aside:nth-child(1){
+        flex-basis: 5%;
+    }
+    .cardContainer {
+        justify-content: center;
+    }
+}
+/* start claim */
+
+#claims {
+  display:none;
+    width: 100%;
+    height: 100%;
+    flex-basis:85%;
+}
+#claims .claimsContainer {
+    margin-top: 20px;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    min-height:400px;
+    display: flex;
+    flex-direction: column;
+    gap:5%;
+}
+#claims .claimsContainer .claim {
+    background-color: white;
+    color: rgb(79, 78, 78);
+    margin-bottom:15px;
+    min-height:200px;
+    flex-basis:80%;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#claims .claimsContainer span{
+    padding:5px 0;
+}
+#claims .claimsContainer .oneLine img{
+    width: 48%;
+    height:200px;
+    object-fit: cover;
+}
+
+#claims .claimsContainer .claim .oneLine:first-child div span:first-child{
+    padding:5px;
+    background-color:black;
+    color:white;
+}
+#claims .claimsContainer .claim .oneLine:first-child div:first-child span:last-child{
+    background-color:rgb(131, 226, 63);
+    padding:5px;
+    color: white;
+}
+#claims .claimsContainer .claim .oneLine:first-child div:last-child span:last-child{
+    background-color:rgb(250, 128, 40);
+    color: white;
+    padding:5px;
+}
+#claims .claimsContainer .claim div{
+    justify-content: space-between;
+    display: flex;
+}
+#claims .claimsContainer .claim .description{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+    padding:8px;
+}
+#claims .claimsContainer .claim .date{
+    padding:5px;
+    background-color:black;
+    color:white;
+}
+#claims .claimsContainer .claim .status{
+    padding:5px;
+}
+#claims .claimsContainer .claim .solved{
+    background-color:#2dea7c;
+    color:white;
+}
+#claims .claimsContainer .claim .pending{
+    background-color:#ff0000;
+    color:white;
+}
+
+@media (max-width: 1250px) {
+    #claims .claimsContainer {
+        justify-content: space-around;
+    }
+    .claim {
+        flex-basis: 40% !important;
+    }
+}
+@media (max-width: 800px) {
+    .claim {
+        flex-basis: 100% !important;
+    }
+}
+/*end claim */
+
+/* حذيفة، المغرب */
+
+
+.button-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    max-width: 400px; /* Set the max width you want */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(0, 73, 144, 0.5) 5px 10px 15px;
+    transition: all 0.5s;
+    margin: 0 auto; /* Centers the container horizontally */
+    z-index: 100; /* Ensures it's above other content */
+}
+
+.button-container:hover {
+    width: 100%; /* Stays consistent when hovered */
+    transition: all 0.5s;
+}
+
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 20px;
+}
